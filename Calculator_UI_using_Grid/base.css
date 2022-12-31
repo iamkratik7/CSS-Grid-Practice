@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 10px;
+  margin: 10rem auto;
+  width: 350px;
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  background-color: rgba(219, 219, 219, 0.384);
+  gap: 1rem;
+  border-radius: 30px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  background-color: black;
+  color: gray;
+  justify-content: end;
+  border-radius: 75px;
+}
+
+.C {
+  background-color: rgb(255, 175, 3);
+  color: rgb(0, 0, 0);
+  border-radius: 55px;
+}
+.back,
+.divide,
+.minus,
+.plus,
+.equals,
+.multiply {
+  background-color: rgb(255, 175, 3);
+  color: rgb(0, 0, 0);
+  border-radius: 35px;
+}
+
+.zero {
+  background-color: rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
+  border-radius: 35px;
+}
+
+.seven,
+.eight,
+.nine,
+.four,
+.five,
+.six,
+.one,
+.two,
+.three {
+  background-color: rgb(225, 225, 225);
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+.display {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+}
+.C {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+.zero {
+  grid-column: 1 / span 3;
+}
